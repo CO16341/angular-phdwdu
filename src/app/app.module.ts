@@ -6,6 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { SignupComponent } from './signup/signup.component';
+import { LoginComponent } from './login/login.component';
   
    
  let config = {
@@ -21,7 +22,7 @@ firebase.initializeApp(config)
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ,ReactiveFormsModule],
-  declarations: [ AppComponent, HelloComponent, SignupComponent ],
+  declarations: [ AppComponent, HelloComponent, SignupComponent, LoginComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

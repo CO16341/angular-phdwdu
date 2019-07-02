@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="row">
+  <div class="row"> 
     <div class="offset-sm-2 col-sm-8">
       <div class="card text-blank border-0">
         <div class="card-body">
@@ -49,6 +49,14 @@
 </div>
         </div>
       </div>
+      <div class ='alert alert-success' *ngIf="password.length >0">
+        {{message}}
+      </div>
+      <div class='alert alert-danger'*ngIf="userError">
+        {{userError.message}}
+      
+      </div>
+
     </div>
   </div>
 </div>
