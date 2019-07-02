@@ -8,6 +8,16 @@ import { HelloComponent } from './hello.component';
 import { SignupComponent } from './signup/signup.component';
   
    
+ let config = {
+    apiKey: "AIzaSyBPuYcRwYGbR9OGRGSewJVz6cKM_vpqwyo",
+    authDomain: "scribe-2894e.firebaseapp.com",
+    databaseURL: "https://scribe-2894e.firebaseio.com",
+    projectId: "scribe-2894e",
+    storageBucket: "",
+    messagingSenderId: "210446709727",
+    appId: "1:210446709727:web:bfa31e70022e60b8"
+  };
+firebase.initializeApp(config)
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ,ReactiveFormsModule],
