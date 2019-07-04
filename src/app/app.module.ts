@@ -7,6 +7,10 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
+import { AuthService } from './auth.service';
+import { HomeComponent } from './home/home.component';
+import { CapitalizePipe } from './capitalize.pipe';
+import { AmazingPipePipe } from './amazing-pipe.pipe';
   
    
  let config = {
@@ -22,7 +26,8 @@ firebase.initializeApp(config)
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ,ReactiveFormsModule],
-  declarations: [ AppComponent, HelloComponent, SignupComponent, LoginComponent ],
-  bootstrap:    [ AppComponent ]
+  declarations: [ AppComponent, HelloComponent, SignupComponent, LoginComponent, HomeComponent, CapitalizePipe, AmazingPipePipe ],
+  bootstrap:    [ AppComponent ],
+  providers: [AuthService]
 })
 export class AppModule { }
