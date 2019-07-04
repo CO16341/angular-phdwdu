@@ -11,6 +11,7 @@ import { AuthService } from './auth.service';
 import { HomeComponent } from './home/home.component';
 import { CapitalizePipe } from './capitalize.pipe';
 import { AmazingPipePipe } from './amazing-pipe.pipe';
+import { DataService } from './data.service';
   
    
  let config = {
@@ -28,6 +29,6 @@ firebase.initializeApp(config)
   imports:      [ BrowserModule, FormsModule ,ReactiveFormsModule],
   declarations: [ AppComponent, HelloComponent, SignupComponent, LoginComponent, HomeComponent, CapitalizePipe, AmazingPipePipe ],
   bootstrap:    [ AppComponent ],
-  providers: [AuthService]
+  providers: [AuthService, DataService]
 })
 export class AppModule { }
