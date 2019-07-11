@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { AuthService } from './auth.service';
 import { HomeComponent } from './home/home.component';
 import { CapitalizePipe } from './capitalize.pipe';
+import {AppRoutingModule} from './approuting.module';
 
 import { DataService } from './data.service';
   
@@ -26,7 +27,7 @@ import { DataService } from './data.service';
 firebase.initializeApp(config)
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ,ReactiveFormsModule],
+  imports:      [ BrowserModule, FormsModule ,ReactiveFormsModule,AppRoutingModule],
   declarations: [ AppComponent, HelloComponent, SignupComponent, LoginComponent, HomeComponent, CapitalizePipe ],
   bootstrap:    [ AppComponent ],
   providers: [AuthService, DataService]
