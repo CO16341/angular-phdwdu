@@ -13,6 +13,7 @@ import { CapitalizePipe } from './capitalize.pipe';
 import {AppRoutingModule} from './approuting.module';
 
 import { DataService } from './data.service';
+import { MenuComponent } from './menu/menu.component';
   
    
  let config = {
@@ -28,7 +29,7 @@ firebase.initializeApp(config)
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ,ReactiveFormsModule,AppRoutingModule],
-  declarations: [ AppComponent, HelloComponent, SignupComponent, LoginComponent, HomeComponent, CapitalizePipe ],
+  declarations: [ AppComponent, HelloComponent, SignupComponent, LoginComponent, HomeComponent, CapitalizePipe, MenuComponent ],
   bootstrap:    [ AppComponent ],
   providers: [AuthService, DataService]
 })
