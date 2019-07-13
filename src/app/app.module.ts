@@ -14,6 +14,8 @@ import {AppRoutingModule} from './approuting.module';
 
 import { DataService } from './data.service';
 import { MenuComponent } from './menu/menu.component';
+import { ProfileComponent } from './profile/profile.component';
+import { MyblogsComponent } from './myblogs/myblogs.component';
   
    
  let config = {
@@ -29,7 +31,7 @@ firebase.initializeApp(config)
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ,ReactiveFormsModule,AppRoutingModule],
-  declarations: [ AppComponent, HelloComponent, SignupComponent, LoginComponent, HomeComponent, CapitalizePipe, MenuComponent ],
+  declarations: [ AppComponent, HelloComponent, SignupComponent, LoginComponent, HomeComponent, CapitalizePipe, MenuComponent, ProfileComponent, MyblogsComponent ],
   bootstrap:    [ AppComponent ],
   providers: [AuthService, DataService]
 })
