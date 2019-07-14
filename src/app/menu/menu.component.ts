@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-loggedIn: boolean=true;
-  constructor() { }
+loggedIn:boolean=false;
+  constructor() { 
+
+  }
 
   ngOnInit() {
   }

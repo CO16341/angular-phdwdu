@@ -1,16 +1,17 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar"  href="#"> 
-      <img src="https://www.google.com/search?q=scribe+logo&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjB8f-or7LjAhVKl48KHUVFBXwQ_AUIECgB&biw=1600&bih=810#imgrc=swUMRqms7Y36YM:">
-      </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+  <a class="navbar-brand" href="#">
+    <img src="https://friendlystock.com/wp-content/uploads/2018/05/4-cute-cat-cartoon-clipart.jpg" height='50' width="50">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse"
+  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
   <ul class="navbar-nav mr-auto">
       <li class="nav-item" routerLinkActive="active" data-toggle="collapse"data-target=".navbar-collapse" *ngIf="!loggedIn" >
           <a class="nav-link" routerLink="/home">Home</a>
       </li>
-       <li class="nav-item" routerLinkActive="active" data-toggle="collapse"data-target=".navbar-collapse" *ngIf="!loggedIn" >
+       <li class="nav-item" routerLinkActive="active" data-toggle="collapse"data-target=".navbar-collapse" *ngIf="loggedIn" >
           <a class="nav-link" routerLink="/myblogs">Home</a>
       </li>
   </ul>
