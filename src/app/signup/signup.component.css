@@ -1,22 +1,25 @@
 .background-left{
-  background-color:#2e7cf6;
-  background-image:url("https://friendlystock.com/wp-content/uploads/2018/05/4-cute-cat-cartoon-clipart.jpg");
-  background-size:contain;
+  background-color: #2e7cf6;
+  background-image: url('https://99firms.com/wp-content/uploads/2019/04/blogging-stats-featured.png');
+  background-repeat: no-repeat;
+  background-size: contain;
   background-position: left bottom;
-}
-.background-right{
-   background-color:#2e7cf6;
-}
-.card{
-  background-color:transparent;
-  color:#fff;
-}
-.text-muted{
-  color:#fff !important;
-}
-.btn[type=submit]{
-border-radius:50px;
-}
-h1{
-   color:#fff ;
-}
+  }
+  .background-right{
+    background-color: #2e7cf6;
+
+  }
+  
+  .card{
+    background-color: transparent;
+    color: #fff;
+  }
+  .text-muted{
+   color: rgb(141, 17, 17) !important;
+  }
+  .btn[type=submit]{
+    border-radius: 50px;
+  }
+  h1{
+    color:#fff;
+  }
